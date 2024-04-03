@@ -23,9 +23,9 @@ def A(arr):
     return arr
 print(A([1,2,3,4,5,6]))
 
+
+
 שאלה מס 3
-
-
 
 def B(arr):
     con = 0
