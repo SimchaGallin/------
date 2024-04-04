@@ -5,7 +5,7 @@ x = 0
 y = 0
 num = 0
 while num >= 0:
-    num = int(input('plurrdg:'))
+    num = int(input('Please enter a number:'))
     x = num % 10
     y = num // 10 % 10
     if x > 5 and y < 5:
