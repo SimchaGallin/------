@@ -1,5 +1,5 @@
 
-# שאלה מס 1
+שאלה מס 1
 
 x = 0
 y = 0
@@ -13,7 +13,7 @@ while num >= 0:
 
 
 
-# שאלה מס 2
+שאלה מס 2
         
 def A(arr):
     for i in range(0,len(arr)//2):
@@ -25,7 +25,7 @@ print(A([1,2,3,4,5,6]))
 
 
 
-# שאלה מס 3
+שאלה מס 3
 
 def B(arr):
     con = 0
@@ -38,7 +38,7 @@ def B(arr):
 
 print(B([1,2,2,2,4,5,5,8,8,8]))
 
- # שאלה מס 5
+ שאלה מס 5
 
 print(el)
 
@@ -54,7 +54,7 @@ print(bn)
 
 
 
-# שאלה מס 8
+שאלה מס 8
 
 def N(arr):
     dic = {}
@@ -69,7 +69,54 @@ def N(arr):
     for j in dic:
         if dic[j] > max_v:
             max_v = dic[j]
-         
+
+'------------------------------------------------------------'
+# פתרון לשאלה מס׳ 8 תחת מגבלות זמני הריצה שניתנו
+
+# Define a class named Test
+class Test:
+    # The constructor method for the class, which initializes the instance with a subject and a grade
+    def __init__(self, subject, grade):
+        self.subject = subject  # Assign the subject argument to the instance's subject attribute
+        self.grade = grade  # Assign the grade argument to the instance's grade attribute
+
+# Create instances of the Test class, each representing a different test with a subject and a grade
+t1 = Test('math', 90)
+t2 = Test('history', 80)
+t3 = Test('english', 95)
+t4 = Test('biology', 75)
+t5 = Test('chemistry', 80)
+
+# Store the instances in a list
+arr = [t1, t2, t3, t4, t5]
+
+# Define a function named most that takes a list of Test instances as an argument
+def mostCommon(arr):
+    dct = {}  # Initialize an empty dictionary to store the grades and their frequencies
+
+    # For each test in the list, add the grade to the dictionary with a count of 0
+    for i in arr:
+        dct[i.grade] = 0
+
+    # For each test in the list, increment the count of the grade in the dictionary
+    for j in arr:
+        dct[j.grade] += 1
+
+    most = 0  # Initialize a variable to store the highest frequency
+    grade = 0  # Initialize a variable to store the grade with the highest frequency
+
+    # For each grade in the dictionary, if its frequency is higher than the current highest frequency,
+    # update the highest frequency and the grade with the highest frequency
+    for key in dct:
+        if dct[key] > most:
+            most = dct[key]
+            grade = key
+
+    # Print the grade with the highest frequency
+    print(grade)
+
+# Call the most function with the list of Test instances as an argument
+mostCommon(arr)
 
 
 # שאלה מס 9
@@ -117,7 +164,7 @@ def show(a):
         print(' ',sum)
         print()
 
-show(a) 
-            
-            
-            
+show(a)
+
+
+
