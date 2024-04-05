@@ -60,9 +60,9 @@ def N(arr):
     dic = {}
     for i in arr:
         if i in dic:
-            dic[i] += 1
+            dic[i.grade] += 1
         else:
-            dic[i] = 1
+            dic[i.grade] = 1
     max_k = 0
     max_v = 0
     print(dic)
