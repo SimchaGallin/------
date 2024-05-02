@@ -179,6 +179,7 @@ print(ntext)
 
 # שאלה מס 10
 
+
 st={
     123:{"fN":["Asher"], "grades":{"math":88, "english":90, "asm":72}},
     456:{"fN":["Dan"], "grades":{"math":78, "english":89, "C#":72, "asm":95}},
