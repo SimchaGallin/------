@@ -94,6 +94,7 @@ print(bn)
 נתונה מחלקה Test
 הכוללת שתי תכונות שם המקצוע והציון 
 
+
 class Test:
     def __init__(self,subject,grade)
         self.subject = subject
